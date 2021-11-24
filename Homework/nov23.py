@@ -18,3 +18,12 @@ outputs
 
 # else 
     # output username is not an adult
+
+name = input("Enter a your name: ")
+print("Hello", name+ "!")
+age = input("Enter your age: ")
+
+if (int(age) >= 18):
+    print(name,  "is an adult")
+elif (int(age) < 18):
+    print(name, "is not an adult")
