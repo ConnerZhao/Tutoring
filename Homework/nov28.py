@@ -11,3 +11,13 @@ while currentNumber != 100:
     total += currentNumber
     print("Current number: " + str(currentNumber))
     print("Sum: " + str(total))
+
+# Answers:
+currentNumber = 0
+total = 0 # Init the var
+while currentNumber != 100:
+    currentNumber += 1
+    if ((currentNumber % 2) != 0): # Find Odd number
+        total += currentNumber
+        print("Current number: " + str(currentNumber))
+        print("Sum: " + str(total))
