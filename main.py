@@ -1,18 +1,10 @@
-import random #make computer smarter
+# Python Program to Swap Two Variables input by the user
+a = input("Insert variable : ")
+b = input("Insert another variable : ")
 
-x = random.randint(0,10) # generates a random number between a, b (0, 10)
-z = int(input("Guess the number(0 to 10): ")) # Initial input
+temp = a 
+a = b 
+b = temp 
 
-# Checks if the user inputted a valid response
-while not((z <= 10) and (z >= 0)): # Condition checking, if the user's input fits the parameter
-    print("Overflow, try again")
-    z = int(input("Guess the number(0 to 10): ")) # Try again
-
-# Actual guessing part
-while z != x:
-    if x > z:
-        print("Too low")
-        z = int(input("Guess the number(0 to 10): ")) # Try again
-    elif x < z:
-        print("Too high")
-        z = int(input("Guess the number(0 to 10): ")) # Try again
+print("The vaule of a after swapping: {}".format(a))
+print("The vaule of b after swapping: {}".format(b))
